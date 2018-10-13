@@ -1,0 +1,47 @@
+html,
+body {
+    text-align: center;
+    background-color: #e6b31e;
+    color: #343434;
+    min-width: 320px;
+}
+
+#form-outer {
+    background-color: #fcfaf1;
+    font-family: Inconsolata, monospace;
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    padding: 20px;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.inputs {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    padding: 5px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width:520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+    }
+    .inputs {
+        width: 80%;
+        float: left;
+    }
+}

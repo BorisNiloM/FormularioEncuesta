@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <title>Formulario de Encuesta</title>
 </head>
 
 <body>
-    <div></div>
+
+    <h1 id="title">Formulario de Encuesta</h1>
+    <div id="form-outer">
+        <p id="description">Permitenos saber como podemos mejora freeCodeCamp</p>
+        <form action="" id="survey-form">
+            <div class="trow">
+                <div class="labels">
+                    <label id="name-label" for="name">*Nombre</label>
+                </div>
+                <div class="inputs">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Ingresa tu Nombre" required>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label id="email-label " for="email">*Email</label>
+                </div>
+                <div class="inputs">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Ingresa tu Email" required>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label for="edad" id="number-label">*Edad</label>
+                </div>
+                <div class="inputs">
+                    <input type="number" name="edad" id="number" min="1" max="125" class="input-field" placeholder="Edad" required>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label for="currentPos">¿Cual opcion describe tu ocupacion actual?</label>
+                </div>
+                <div class="inputs">
+                    <select name="currentPos" id="dropdown" class="dropdown">
+                        <option disabled value>Selecciona una opcion</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="aprendis">Aprendis full time</option>
+                        <option value="prefiereNo">Prefiere no decir</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+
 </body>
 
 </html>
