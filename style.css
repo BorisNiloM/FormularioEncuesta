@@ -9,7 +9,7 @@ body {
 #form-outer {
     background-color: #fcfaf1;
     font-family: Inconsolata, monospace;
-    width: 75%;
+    width: 50%;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 5px;
@@ -35,7 +35,36 @@ body {
     vertical-align: middle;
 }
 
+.input-field {
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+#comments {
+    height: 50px;
+}
+
+.userRatings {
+    display: block;
+}
+
+#submit {
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+    background-color: #F2D788;
+    border-radius: 10px;
+    font-family: Inconsolata, monospace;
+    color: #686827;
+}
+
 @media (max-width:520px) {
+    #form-outer {
+        overflow: auto;
+    }
     .labels {
         width: 100%;
         text-align: left;
@@ -43,5 +72,17 @@ body {
     .inputs {
         width: 80%;
         float: left;
+    }
+    .input-field {
+        width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .input-field {
+        width: 100%;
+    }
+    #comments {
+        height: 50px;
     }
 }

@@ -14,7 +14,7 @@
 
     <h1 id="title">Formulario de Encuesta</h1>
     <div id="form-outer">
-        <p id="description">Permitenos saber como podemos mejora freeCodeCamp</p>
+        <p id="description">Permitenos saber como podemos mejorar freeCodeCamp</p>
         <form action="" id="survey-form">
             <div class="trow">
                 <div class="labels">
@@ -37,7 +37,7 @@
                     <label for="edad" id="number-label">*Edad</label>
                 </div>
                 <div class="inputs">
-                    <input type="number" name="edad" id="number" min="1" max="125" class="input-field" placeholder="Edad" required>
+                    <input type="number" name="edad" id="userAge" min="1" max="125" class="input-field" placeholder="Edad" required>
                 </div>
             </div>
             <div class="trow">
@@ -54,6 +54,57 @@
                     </select>
                 </div>
             </div>
+            <div class="trow">
+                <div class="labels">
+                    <label>¿Que tan probable es que recomiendes freeCodeCamp a un amigo?</label>
+                </div>
+                <div class="inputs">
+                    <label class="userRatings"><input type="radio" name="radio-buttons" value="1" > Definitivamente</label>
+                    <label class="userRatings"><input type="radio" name="radio-buttons" value="2" > Podria ser</label>
+                    <label class="userRatings"><input type="radio" name="radio-buttons" value="3" > No es seguro</label>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label for="userLike">¿Que es lo que mas te gusta de FCC?</label>
+                </div>
+                <div class="inputs">
+                    <select name="userLike" id="user-like" class="dropdown">
+                            <option disabled value>Selecciona una opcion</option>
+                            <option value="desafios">Desafios</option>
+                            <option value="proyectos">Proyectos</option>
+                            <option value="comunidad">Comunidad</option>
+                            <option value="openSource">Open Source</option>
+                        </select>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label>Cosas que deberian mejorar en el Futuro. (Marcar todas las que correspondan)</label>
+                </div>
+                <div class="inputs">
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="1"> Proyectos Front-end </label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="2"> Proyectos Back-end </label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="3"> Data Visualization</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="4"> Desafios</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="5"> Comunidad Open Source</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="6"> Salas de ayuda</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="7"> Videos</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="8"> City Meetups</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="9"> Wiki</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="10"> Forum</label>
+                    <label class="userRatings"><input type="checkbox" name="prefer" value="11"> Cursos adicionales</label>
+                </div>
+            </div>
+            <div class="trow">
+                <div class="labels">
+                    <label for="comments">¿Algun comentario o sugerencias?</label>
+                </div>
+                <div class="inputs">
+                    <textarea name="comment" id="comments" class="input-field" placeholder="Ingresa tu comentario aqui..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Enviar</button>
 
 
 
