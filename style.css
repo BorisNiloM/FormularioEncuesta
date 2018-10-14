@@ -9,12 +9,11 @@ body {
 #form-outer {
     background-color: #fcfaf1;
     font-family: Inconsolata, monospace;
-    width: 50%;
+    width: 55%;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 5px;
     padding: 10px;
-    padding: 20px;
 }
 
 .labels {
@@ -29,7 +28,7 @@ body {
 .inputs {
     display: inline-block;
     text-align: left;
-    width: 48%;
+    width: 50%;
     padding: 5px;
     margin-top: 10px;
     vertical-align: middle;
@@ -37,7 +36,7 @@ body {
 
 .input-field {
     height: 20px;
-    width: 200px;
+    width: 150px;
     padding: 5px;
     border: 1px solid #c0c0c0;
     border-radius: 2px;
@@ -64,13 +63,14 @@ body {
 @media (max-width:520px) {
     #form-outer {
         overflow: auto;
+        width: 70%;
     }
     .labels {
         width: 100%;
         text-align: left;
     }
     .inputs {
-        width: 80%;
+        width: 85%;
         float: left;
     }
     .input-field {
@@ -78,11 +78,8 @@ body {
     }
 }
 
-@media (max-width:800px) {
-    .input-field {
-        width: 100%;
-    }
-    #comments {
-        height: 50px;
+@media (max-width:632px) {
+    #form-outer {
+        width: 70%;
     }
 }
